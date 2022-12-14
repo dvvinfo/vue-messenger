@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import ContactUserinfo from "../components/contacts/ContactUserInfo.vue";
 
 Vue.use(VueRouter);
 
@@ -8,6 +9,11 @@ const routes = [
     path: "/",
     name: "contacts",
     component: () => import("../views/ContactsView.vue"),
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: ContactUserinfo,
   },
   {
     path: "/home",

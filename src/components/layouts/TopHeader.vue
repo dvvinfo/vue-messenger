@@ -1,6 +1,6 @@
 <template>
   <div class="v-header">
-    <div class="v-header__back">
+    <div class="v-header__back" @click="goBack">
       <i class="material-icons">keyboard_arrow_left</i>
       <span>Back</span>
     </div>
@@ -14,6 +14,11 @@
 <script>
 export default {
   name: "TopHeader",
+  methods: {
+    goBack() {
+      this.$router.go(-1);
+    },
+  },
 };
 </script>
 

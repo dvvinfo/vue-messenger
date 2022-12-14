@@ -1,14 +1,16 @@
 <template>
   <div>
-    <h1>Contacts</h1>
+    <contact-list />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import ContactList from "@/components/contacts/ContactList.vue";
 export default {
   name: "ContactsView",
-  components: {},
+  components: {
+    ContactList,
+  },
 };
 </script>

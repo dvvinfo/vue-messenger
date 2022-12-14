@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  nam: "UserApp",
+  name: "ContactUserInfo",
 };
 </script>
 
